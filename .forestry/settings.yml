@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: КПД
+- type: jekyll-pages
+  label: КПД0
+  create: all
+  match: "**/*"
+  templates:
+  - page
 - type: directory
   path: docs
   label: Docs
